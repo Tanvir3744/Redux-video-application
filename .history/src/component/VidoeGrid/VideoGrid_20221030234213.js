@@ -8,18 +8,17 @@ import Loading from '../Loading/Loading';
 const VideoGrid = () => {
     const { videos, isError, isLoading, error } = useSelector(state => state.videos);
     const dispatch = useDispatch()
-    const {tags, search} = useSelector(state => state.filter)
 
     //handle side effect
     useEffect(() => {
-       dispatch(fetchVidoesAsync({tags, search})) 
-    }, [dispatch, tags,search])
+       dispatch(fetchVidoesAsync()) 
+    }, [dispatch])
 
     //handle errors and showing errors if occured in the ui
     let content;
     if (isLoading){ content = <Loading />;}
     if (!isLoading && isError) {content = <div className="col-span-12">{error}</div>} 
-    if (!isError && !isLoading && videos?.length === 0) { content = <div className="col-span-12"><srong>No Vidoes Found</srong></div> }
+    if (!isError && !isLoading && videos?.length === 0) { content = <div className="col-span-12"><srong>No Vidoes Found { error}</srong></div> }
     if (!isError && !isLoading && videos?.length > 0) {
         content = videos.map(video => <SingleVideo key={video.id} video={video} />)
     }

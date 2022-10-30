@@ -8,7 +8,7 @@ import Loading from '../Loading/Loading';
 const VideoGrid = () => {
     const { videos, isError, isLoading, error } = useSelector(state => state.videos);
     const dispatch = useDispatch()
-    const {tags, search} = useSelector(state => state.filter)
+    const {tags, searchTxt} = useSelector(state => state.filter)
 
     //handle side effect
     useEffect(() => {

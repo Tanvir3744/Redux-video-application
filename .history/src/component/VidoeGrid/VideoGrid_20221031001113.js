@@ -8,12 +8,12 @@ import Loading from '../Loading/Loading';
 const VideoGrid = () => {
     const { videos, isError, isLoading, error } = useSelector(state => state.videos);
     const dispatch = useDispatch()
-    const {tags, search} = useSelector(state => state.filter)
+    const {tags, searchTxt} = useSelector(state => state.filter)
 
     //handle side effect
     useEffect(() => {
-       dispatch(fetchVidoesAsync({tags, search})) 
-    }, [dispatch, tags,search])
+       dispatch(fetchVidoesAsync({tags, searchTxt})) 
+    }, [dispatch, tags,searchTxt])
 
     //handle errors and showing errors if occured in the ui
     let content;

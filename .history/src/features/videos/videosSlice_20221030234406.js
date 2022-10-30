@@ -11,7 +11,7 @@ const initialState = {
 
 // async thunk
 export const fetchVidoesAsync = createAsyncThunk('vidoes/fetchVidoes', async({tags, search}) => { //whenever we want to send something from our api's we can't send more than one parameter
-    const videos = await getVideos(tags, search);
+    const videos = await getVideos({tags, search});
     return videos;
 })
 

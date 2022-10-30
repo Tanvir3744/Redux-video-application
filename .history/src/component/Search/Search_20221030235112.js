@@ -9,12 +9,11 @@ const Search = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(searched(input))
-        setInput('')
     }
     return (
         <div className='flex align-middle'>
             <form className='active:border-none' onSubmit={handleSubmit} >
-                <input type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder='Search' className='border-none outline-none text-base font-sans text-slate-500'/>
+                <input type="text" onChange={(e) => setInput(e.target.value)} placeholder='Search' className='border-none outline-none text-base font-sans text-slate-500'/>
             </form>
             <img
                 classNanme="inline h-4 cursor-pointer"

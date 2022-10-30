@@ -12,8 +12,8 @@ const VideoGrid = () => {
 
     //handle side effect
     useEffect(() => {
-       dispatch(fetchVidoesAsync({tags, search})) 
-    }, [dispatch, tags,search])
+       dispatch(fetchVidoesAsync()) 
+    }, [dispatch])
 
     //handle errors and showing errors if occured in the ui
     let content;

@@ -7,7 +7,7 @@ export const getVideos = async (tags, search) => {
         queryString += tags?.map(tag => `tags_like=${tag}`).join('&')
     }
 
-    if (search !== '') {
+    if (search === '') {
         queryString += `&q=${ search }`;
     }
     console.log(queryString)

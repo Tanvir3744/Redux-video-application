@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Player from '../component/Player/Player';
 import VidoeDescription from '../component/VideoDescription/VidoeDescription';
+import RelatedSingleVideo from '../component/VideoList/RelatedSingleVideo';
 import { fetchVideo } from '../features/video/video_slice';
 import Loading from '../component/Loading/Loading';
 import RelatedVideo from '../component/VideoList/RelatedVideo';
