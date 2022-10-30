@@ -6,10 +6,12 @@ import RelatedSingleVideo from './RelatedSingleVideo';
 
 const RelatedVideo = ({ currentId, tags }) => {
     const { relatedVideos, loading, isError, error } = useSelector(state => state.relatedVideos)
+    console.log('relatedVideos', relatedVideos)
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchRelatedVideos({ tags, id: currentId }))
     }, [dispatch, tags, currentId])
+    console.log(currentId, tags)
 
     //decide what to render
     let content = null;

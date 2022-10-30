@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Player = ({ link, title }) => {
+    console.log(link)
     return (
         <div>
             <iframe

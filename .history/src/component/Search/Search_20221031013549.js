@@ -17,7 +17,6 @@ const Search = () => {
         if (!match) {
             navigate('/')
         }
-        
         setInput('')
     }
     return (
@@ -26,7 +25,7 @@ const Search = () => {
                 <input type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder='Search' className='border-none outline-none text-base font-sans text-slate-500'/>
             </form>
             <img
-                className="inline h-4 cursor-pointer"
+                classNanme="inline h-4 cursor-pointer"
                 src={SearchImg}
                 alt="Search"
             />

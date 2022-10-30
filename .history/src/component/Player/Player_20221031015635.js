@@ -1,11 +1,12 @@
 import React from 'react';
 
 const Player = ({ link, title }) => {
+    console.log(link)
     return (
         <div>
             <iframe
                             width="100%"
-                            className="aspect-video"
+                            class="aspect-video"
                             src={link}
                             title={title}
                             frameBorder=""

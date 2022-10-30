@@ -105,22 +105,6 @@
             "likes": 0,
             "unlikes": 0
         }
-        ,
-        {
-            "id": 8,
-            "title": "How to grow as a freelance - Upwork success tips",
-            "description": "Upwork is a platfrom where a freelancer can get highly paid freelance jobs according to their skill with greate collaboration with foregin and local buyer in this video I will share some tips and tricks how you can boost your career and get project in a few time.",
-            "author": "Pro-code BD",
-            "avatar": "https://avatars.githubusercontent.com/u/74107272?v=4",
-            "date": "Oct 15, 2021",
-            "duration": "10:12",
-            "views": "2.1k",
-            "link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcS6mgYdj1M0zUqTgXN_l3XSK76uHIaGJ_dnYQ",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8hvDx8MACl-7S1tMJUrCJAzDQit2FgPIp0gKu2AUOg&s",
-            "tags": ["upwork", "success", "freelancing"],
-            "likes": 0,
-            "unlikes": 0
-        }
     ],
     "tags": [
         {
@@ -165,4 +149,3 @@
         }
     ]
 }
-<iframe width="727" height="409" src="https://www.youtube.com/embed/qqoLf2I6pak" title="Upwork Crash Course | Upwork Freelancing Guideline" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

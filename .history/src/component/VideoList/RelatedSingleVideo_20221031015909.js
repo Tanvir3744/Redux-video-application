@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const RelatedSingleVideo = ({video}) => {
-    const {id, author, duration,  title, views, thumbnail,  date} = video || {};
+    console.log('this is single video object',video)
+    const {id, author, duration,  title, views, thumbnail, link, date} = video || {};
     return (
         <div>
             <div className="w-full flex flex-row gap-2 mb-4">

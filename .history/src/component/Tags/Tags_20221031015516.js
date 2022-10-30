@@ -19,7 +19,7 @@ const Tags = () => {
         tagContent = tags.map((singleTag) => <Tag key={singleTag.id} singleTag={singleTag} />)
     }
     return (
-        <div className="max-w-7xl mx-auto px-5 py-6 lg:px-0 flex gap-2 border-b overflow-y-auto">
+        <div class="max-w-7xl mx-auto px-5 py-6 lg:px-0 flex gap-2 border-b overflow-y-auto">
             { tagContent }
         </div >
     );
